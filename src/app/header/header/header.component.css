@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+
+
+.header{
+    background-color: #845EC2;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header label{
+    font-family: "poppins";
+    font-size: 4vw;
+    color: white;
+    /* margin-top: 200px; */
+
+}
+
+img{
+    opacity: 0.9;
+    width: 50%;
+}
+
+.feint{
+    font-family: "poppins";
+    font-size: 3vw;
+    color: #FF6F91;
+    /* margin-top: 20px; */
+    padding: 10px;
+    line-height: 1em;
+}
+.devs{
+    font-family: "poppins";
+    font-size: 3vw;
+    color: white;
+    /* margin-top: 20px; */
+    padding: 10px;
+    line-height: 1em;
+    margin-right: 2vw;
+}
+
+
+
+
+
+
+
+/* button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10em;
+   }
+   
+   button:hover {
+    background-color: #FFC75F;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+   } */
+
+   .toolbar{
+    background-color: #845EC2;
+    
+   }
+
+
+
+
+
+
+   

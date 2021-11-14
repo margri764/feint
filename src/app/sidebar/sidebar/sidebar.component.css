@@ -1,0 +1,34 @@
+
+mat-toolbar{
+    /* background-color: #845EC2; */
+
+}
+
+mat-icon{
+    color: #845EC2;
+}
+
+mat-toolbar{   
+     color: black;
+     overflow: hidden;
+}
+
+mat-sidenav{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+} 
+
+mat-nav-list{
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+
+}
+
+mat-sidenav-container{
+    /* width: 400px; */
+    /* height: 400px; */
+    overflow: hidden;
+}  
+

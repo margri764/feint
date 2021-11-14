@@ -1,0 +1,59 @@
+
+
+
+
+<div class=" toolbar"  [ngStyle]="{'display':(show) ? 'none' : 'block' }"    >
+
+<app-sidebar (emitShow)="show = $event"></app-sidebar>
+
+
+</div>
+
+
+
+
+
+
+<div class="header animate__animated animate__fadeInDown">
+
+
+    <div fxLayout="row" fxLayoutAlign="space-between end">
+
+        <div class="feint " >
+             <span class="animate__animated animate__bounce">Feint</span><span class="devs">Devs</span> 
+        </div>
+  
+        <div class="devs"  >
+         
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="showToolbar()">
+                <mat-icon style="font-size: 3vw;">menu</mat-icon>
+              </button>
+           
+         </div>
+     </div>
+
+
+<div fxLayout="row" fxLayout.xs="column" style=" height: 500px; ">
+    <!-- <div fxFlex="20"  fxFlex.lg="15"fxFlex.sm="30"> -->
+
+
+        <div fxLayoutAlign="center center" fxFlex="100%">
+            
+         <label style="line-height: 1.4em; margin-left: 20px;" >Especialistas en  Desarrollo Web</label>
+        
+        </div>
+             
+                 
+   
+
+        <div  fxLayoutAlign="center center" fxFlex="100%" >
+            <video src="../../../assets/videoTest.mp4" controls width="100%" height="100%"></video>
+        </div>
+ 
+ 
+</div>
+
+
+
+</div>
+
