@@ -4,7 +4,8 @@
 .text{
     font-family: 'Poppins', sans-serif;
     font-size: 2vw;
-    color: rgb(46, 38, 38);
+    /* color: rgb(46, 38, 38); */
+    color: blanchedalmond;
     text-align: center;
     padding: 10px;
     line-height: 4vw;
@@ -15,10 +16,18 @@
     font-family: 'Nunito Sans', sans-serif;
     font-stretch: expanded;
     font-size: 2vw;
-    color: rgb(46, 38, 38);
+    /* color: rgb(46, 38, 38); */
+    color: blanchedalmond;
     text-align: center;
     padding: 10px;
     line-height: 4vw;
     /* margin-right: 2vw; */
 }
 
+
+img{
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 80%; */
+}

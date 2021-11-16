@@ -18,7 +18,8 @@
 
 img{
     opacity: 0.9;
-    width: 50%;
+    display: flex;
+    width: 90%;
 }
 
 .feint{

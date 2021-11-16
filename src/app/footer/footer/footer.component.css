@@ -1,0 +1,39 @@
+
+    .footer{
+    background-color: #845EC2;
+    width: 100vw;
+    height: 70vh;
+    /* height: ; */
+    }
+    
+    
+.footer label{
+    font-family: "poppins";
+    font-size: 2vw;
+    color: white;
+    /* margin-top: 200px; */
+
+}
+img{
+    opacity: 0.9;
+    display: flex;
+    width: 50%;
+}
+
+.feint{
+    font-family: "poppins";
+    font-size: 2vw;
+    color: #FF6F91;
+    /* margin-top: 20px; */
+    padding: 10px;
+    line-height: 1em;
+}
+.devs{
+    font-family: "poppins";
+    font-size: 2vw;
+    color: white;
+    /* margin-top: 20px; */
+    padding: 10px;
+    line-height: 1em;
+    margin-right: 2vw;
+}
