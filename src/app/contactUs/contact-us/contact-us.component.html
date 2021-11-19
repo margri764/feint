@@ -1,0 +1,56 @@
+  
+
+<section class="form_wrap animate__animated animate__fadeIn" >
+    
+
+            
+<form  [formGroup]="myForm" id="form"  class="form_contact"> 
+
+    <h2>Formulario de Contacto</h2>  
+
+    <div class="form-floating" >
+        <input style="margin-bottom:20px ;" type="text"  class="form-control" id="floatingInput"  formControlName="name" autofocus> 
+        <label  for="floatingInput">Nombre y Apellido</label>
+ 
+    </div>    
+
+    <br> <br>
+   
+        <label>Telefono / Celular *</label>
+        <input type="number" class="form-control" formControlName="phone">
+      
+      <br>   <br>     
+        <label>Correo electronico *</label>
+        <input type="email" class="form-control" formControlName="email" >
+   
+       <br>   <br>  
+
+ 
+            
+         <br>                           
+        <label class="mt-5">Mensaje *</label>
+        <textarea class="form-control" formControlName="message"></textarea>
+
+   
+       <div class="d-flex justify-content-start">         
+    
+          
+
+        <button  type="button"  class="btn" 
+        (click)="sendForm()" id="font">Enviar </button> 
+          
+        </div>
+
+</form> 
+      
+
+
+ 
+</section>   
+   
+
+  
+
+
+
+      

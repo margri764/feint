@@ -2,7 +2,7 @@
 
 
 
-<div class=" toolbar"  [ngStyle]="{'display':(show) ? 'none' : 'block' }"    >
+<div class="toolbar"  [ngStyle]="{'display':(show) ? 'none' : 'block' }"    >
 
 <app-sidebar (emitShow)="show = $event"></app-sidebar>
 
@@ -12,46 +12,54 @@
 
 
 
+<!-- <div class="header animate__animated animate__fadeIn"> -->
 
 
-<div class="header animate__animated animate__fadeInDown">
+<div class="header animate__animated animate__fadeIn">
 
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
 
-    <div fxLayout="row" fxLayoutAlign="space-between end">
-
-        <div class="feint " >
-             <span class="animate__animated animate__bounce">Feint</span><span class="devs">dEvs</span> 
+        <div class="feint animate__animated animate__backInLeft">
+             <span class="">Feint</span><span class="devs">dEvs</span> 
         </div>
   
-        <div class="devs"  >
-         
-            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="showToolbar()">
-                <mat-icon style="font-size: 3vw;">menu</mat-icon>
-              </button>
-           
-         </div>
-     </div>
+        <div class="icon animate__animated animate__backInDown">         
+            <button mat-icon-button  aria-label="Example icon-button with menu icon" (click)="showToolbar()">
+              <mat-icon >menu</mat-icon>
+            </button>           
+        </div>
+
+    </div>
 
 
-<div fxLayout="row" fxLayout.xs="column" style=" height: 500px; ">
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center"class="content" >
     <!-- <div fxFlex="20"  fxFlex.lg="15"fxFlex.sm="30"> -->
 
 
-        <div fxLayoutAlign="center center" fxFlex="100%">
+        <div fxLayout="column" fxFlex="50%">
             
-         <label style="line-height: 1.4em; margin-left: 20px;" >Especialistas en  Desarrollo Web</label>
-        
-        </div>
-             
+            <div fxFlexOrder="1" fxLayoutAlign="center center">
+                <label >Especialistas en  Desarrollo Web</label>  
+            </div>    
+            
+            <div fxFlexOrder="2" fxLayoutAlign="start" style="margin-left: 20px; margin-top: 30px;">
+                    
+               <a><button class="btn" routerLink="/contact-us">Nos ponemos en contacto? </button></a>
                  
-   
+            </div>
+        
+        </div>             
+                   
 
-        <div  fxLayoutAlign="center center" fxFlex="100%"  >
-            <img src="./assets/logo2.gif" width="100%" >
+        <div  fxLayoutAlign="center center" fxFlex="50%"  >
+            <img src="../../../assets/logo2.gif"  >
         </div>
- 
- 
+        
+
+
+    
 </div>
+
 
 
 

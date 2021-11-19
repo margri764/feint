@@ -1,39 +1,93 @@
 
+
     .footer{
-    background-color: #845EC2;
-    width: 100vw;
-    height: 70vh;
-    /* height: ; */
+        background: radial-gradient(circle at 114.09% 20.12%, #ffa3ff 0, #f790ff 16.67%, #bd79f0 33.33%, #845ec2 50%, #504393 66.67%, #252c6a 83.33%, #001847 100%);
+        width: 100vw;
+        height: 70vh;    
     }
     
+
     
-.footer label{
-    font-family: "poppins";
-    font-size: 2vw;
-    color: white;
-    /* margin-top: 200px; */
+    .footer label{
+        font-family: "poppins";
+        font-size: 2vw;
+        color: white;
+        /* margin-top: 200px; */
+
+    }
+    img{
+        opacity: 0.9;
+        width: 50%;
+    }
+
+    .feint{
+        font-family: "poppins";
+        font-size: 4vw;
+        color: #FF6F91;
+        padding: 10px;
+   
+    }
+    .devs{
+        font-family: "poppins";
+        font-size: 4vw;
+        color: white;
+        padding: 10px;
+   
+    }
+    mat-card{
+        background: none;
+    }
+
+    mat-card-title {
+        font-family: "poppins";
+        color: blanchedalmond;
+        font-size: 2.6vw;
+        line-height: 1.5em;
+    }
+
+    mat-card-content p,a{
+            font-family: "poppins";
+            font-size: 2vw;
+            color: white;
+            text-decoration: none;
+        
+    }
+
+
+@media only screen and (max-width: 573px){  
+
+    .footer{
+        height: 40vh;
+    }
+
+    .devs{
+        font-size: 8vw;
+    }
+
+    .feint{
+        font-size: 8vw;
+    }
+
+    mat-card-title p{
+        font-size: 5vw;
+        line-height: 1.5em;
+    }
+    
+    mat-card-content p,a{
+        font-size: 4vw;
+    }
+ 
 
 }
-img{
-    opacity: 0.9;
-    display: flex;
-    width: 50%;
+
+@media only screen and (min-width: 574px)and (max-width: 767px){
+
 }
 
-.feint{
-    font-family: "poppins";
-    font-size: 2vw;
-    color: #FF6F91;
-    /* margin-top: 20px; */
-    padding: 10px;
-    line-height: 1em;
+@media only screen and (min-width: 768px)and (max-width: 1280px) {
+
 }
-.devs{
-    font-family: "poppins";
-    font-size: 2vw;
-    color: white;
-    /* margin-top: 20px; */
-    padding: 10px;
-    line-height: 1em;
-    margin-right: 2vw;
+
+@media only screen and (min-width: 768px)and (max-width: 1280px) {
+
 }

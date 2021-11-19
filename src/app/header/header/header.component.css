@@ -1,58 +1,70 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
 
 
-.header{
-    background-color: #845EC2;
+ .header{
+    background: radial-gradient(circle at 114.09% 20.12%, #ffa3ff 0, #f790ff 16.67%, #bd79f0 33.33%, #845ec2 50%, #504393 66.67%, #252c6a 83.33%, #001847 100%);
     width: 100vw;
     height: 100vh;
 }
 
-.header label{
-    font-family: "poppins";
-    font-size: 4vw;
-    color: white;
-    /* margin-top: 200px; */
-
-}
 
 img{
-    opacity: 0.9;
+    opacity: 0.8;
     display: flex;
     width: 90%;
 }
 
 .feint{
-    font-family: "poppins";
+    font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     color: #FF6F91;
-    /* margin-top: 20px; */
-    padding: 10px;
+    padding: 30px;
     line-height: 1em;
 }
+
 .devs{
-    font-family: "poppins";
+    font-family: 'Poppins', sans-serif;
     font-size: 3vw;
     color: white;
-    /* margin-top: 20px; */
     padding: 10px;
     line-height: 1em;
     margin-right: 2vw;
 }
 
+.icon{
+    margin-right: 40px;
+}
 
+.icon mat-icon{
+    font-size: 4vw;
+    color: #000142;
 
+}
 
+.content{
+    height: 80%;
+    width: 100%;
+    display:flex;
+}
+.content label{
+    line-height: 1.4em;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    color: white;
 
+}
 
-
-/* button {
+.btn {
     padding: 1.3em 3em;
-    font-size: 12px;
+    font-size: 1.1vw;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
+    font-weight: 100;
+    color: rgb(56, 56, 56);
     background-color: #fff;
     border: none;
     border-radius: 45px;
@@ -60,19 +72,67 @@ img{
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    margin-left: 10em;
+    /* margin-left: 10em; */
    }
    
-   button:hover {
-    background-color: #FFC75F;
+   .btn:hover {
+    background-color: #FF6F91;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
    }
    
-   button:active {
+   .btn:active {
     transform: translateY(-1px);
-   } */
+   }
+
+
+@media only screen and (max-width: 573px){  
+
+    .content label{  
+        font-size: 6vw;
+        margin-top: 50px;    
+    }
+
+    .feint{
+        font-size: 8vw;
+    }
+
+    .devs{
+        font-size: 7vw;
+    }
+    
+    .icon mat-icon{
+        font-size: 13vw;
+    }
+
+    .btn{
+        font-size: 3vw;
+    }
+
+
+}
+
+@media only screen and (min-width: 574px)and (max-width: 767px){
+
+}
+
+@media only screen and (min-width: 768px)and (max-width: 1280px) {
+
+}
+
+@media only screen and (min-width: 1281px) {
+    
+    .icon{
+        color: white;
+        margin-right: 60px;
+    }
+
+}
+
+
+
+
 
    .toolbar{
     background-color: #845EC2;

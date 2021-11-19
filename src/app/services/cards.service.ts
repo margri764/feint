@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -6,7 +9,11 @@ import { Injectable } from '@angular/core';
 
 
 export class CardsService {
+  
 
+  private baseUrl: string = environment.baseUrl;
+  
+  constructor(private _http: HttpClient) { }
 
   cardsArray= [
     {
@@ -26,11 +33,17 @@ export class CardsService {
    }
   ]  
   
-  constructor() { }
+ 
 
 
 getCards(){
   return this.cardsArray
 
 }
+
+sendMessage(body:any) : Observable<any> {
+  return this._http.post("https://dulce-alma-deco.herokuapp.com/api/send-mail", body);
+};
+
+
 }
