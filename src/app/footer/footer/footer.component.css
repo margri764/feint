@@ -12,7 +12,6 @@
         font-family: "poppins";
         font-size: 2vw;
         color: white;
-        /* margin-top: 200px; */
 
     }
     img{
@@ -31,9 +30,14 @@
         font-family: "poppins";
         font-size: 4vw;
         color: white;
-        padding: 10px;
-   
+        padding: 10px;   
     }
+
+
+    .cardsFooter{
+        margin-top: 50px;
+    }
+
     mat-card{
         background: none;
     }
@@ -50,9 +54,27 @@
             font-size: 2vw;
             color: white;
             text-decoration: none;
-        
+       
+    }
+    .copyrigth #feint{
+        font-family: "poppins";
+        font-size: 2vw;
+        color: #FF6F91;
+   
+    }
+    .copyrigth{
+        margin-top: 30px;
     }
 
+    .copyrigth #devs{
+        font-family: "poppins";
+        font-size: 2vw;
+        color: white;
+    }
+
+    .material-icons{
+        color: white;
+    }
 
 @media only screen and (max-width: 573px){  
 
@@ -68,12 +90,24 @@
         font-size: 8vw;
     }
 
+    .cardsFooter{
+        margin-top: 20px;
+    }
+
     mat-card-title p{
         font-size: 5vw;
         line-height: 1.5em;
     }
     
     mat-card-content p,a{
+        font-size: 4vw;
+    }
+
+    .copyrigth #feint{
+        font-size: 4vw;
+   
+    }
+    .copyrigth #devs{
         font-size: 4vw;
     }
  
@@ -85,6 +119,10 @@
 }
 
 @media only screen and (min-width: 768px)and (max-width: 1280px) {
+    
+    .copyrigth{
+        margin-top: 80px;
+    }
 
 }
 
