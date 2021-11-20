@@ -1,7 +1,7 @@
 
 
     .footer{
-        background: radial-gradient(circle at 114.09% 20.12%, #ffa3ff 0, #f790ff 16.67%, #bd79f0 33.33%, #845ec2 50%, #504393 66.67%, #252c6a 83.33%, #001847 100%);
+        background: radial-gradient(circle at 114.09% 20.12%, #fc40fc 0, #f790ff 16.67%, #bd79f0 33.33%, #845ec2 50%, #504393 66.67%, #252c6a 83.33%, #001847 100%);
         width: 100vw;
         height: 70vh;    
     }
@@ -44,7 +44,7 @@
 
     mat-card-title {
         font-family: "poppins";
-        color: blanchedalmond;
+        color: white;
         font-size: 2.6vw;
         line-height: 1.5em;
     }
@@ -76,10 +76,39 @@
         color: white;
     }
 
+    .fa-whatsapp{
+        /* margin-left: 10px; */
+        font-size: 3vw;
+        color: green;
+    }
+
+    .fa-whatsapp:hover{   
+        color: blanchedalmond;
+    }
+
+    .fa-instagram{
+        font-size: 2.7vw;
+        color:rgb(110, 110, 108);
+        margin-left: 4vw;      }
+    
+      .fa-instagram:hover{
+        color: blanchedalmond;
+    }
+
+    .fa-facebook-f{
+        font-size: 2.7vw;
+        color:rgb(58, 92, 245);
+        margin-left: 4vw;  
+    }
+    .fa-facebook-f:hover{
+        color: blanchedalmond;
+
+    }
+
 @media only screen and (max-width: 573px){  
 
     .footer{
-        height: 40vh;
+        height: 50vh;
     }
 
     .devs{
@@ -110,6 +139,19 @@
     .copyrigth #devs{
         font-size: 4vw;
     }
+
+    .fa-whatsapp{
+        font-size: 8vw;     
+    }
+
+    .fa-instagram{
+        font-size: 8vw;     
+    }
+    
+    .fa-facebook-f{
+        font-size: 8vw;
+    }
+  
  
 
 }
@@ -126,6 +168,42 @@
 
 }
 
-@media only screen and (min-width: 768px)and (max-width: 1280px) {
+@media only screen and (min-width: 1281px) {
+    
+    .footer{
+        height: 90vh;
+    }
+
+    /* .devs{
+        font-size: 8vw;
+    }
+
+    .feint{
+        font-size: 8vw;
+    }
+
+    .cardsFooter{
+        margin-top: 20px;
+    }
+
+  
+     */
+
+    mat-card-content p,a{
+        font-size: 1.4vw;
+        line-height: 2em;
+    }
+
+    /* .copyrigth #feint{
+        font-size: 4vw;
+   
+    }
+    .copyrigth #devs{
+        font-size: 4vw;
+    }
+  */
+
+ 
+
 
 }

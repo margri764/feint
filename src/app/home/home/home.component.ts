@@ -9,6 +9,7 @@ import { CardsService } from 'src/app/services/cards.service';
 export class HomeComponent implements OnInit {
 
   featuresCards : any= [];
+  imgWidth : any;
 
   constructor(
               private _card : CardsService
@@ -18,7 +19,11 @@ export class HomeComponent implements OnInit {
 
   }
 
+
+
+
   ngOnInit(): void {
+
   }
 
 

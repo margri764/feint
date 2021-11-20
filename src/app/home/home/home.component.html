@@ -23,8 +23,9 @@
 <mat-card class="mat-elevation-z0" >
 
 
-  <mat-card-header >
-      <mat-card-title>  {{card.title}} </mat-card-title>
+  <mat-card-header fxLayoutAlign="center center" >
+
+      <mat-card-title style="margin-top: 1vw;"> {{card.title}}  </mat-card-title>
   
   </mat-card-header>
   <br>
@@ -53,7 +54,8 @@
 
 
 </div>
-</div>
+
+</div> <!-- cards end -->
 <br><br><br>
 
 <div >
@@ -61,20 +63,47 @@
    <p class="text2">Nuestros diseños son adaptables a cualquier dispositivo.
    </p>
 </div>
+
 <br><br><br>
 
 
 <div fxLayout="row wrap" fxLayout.xs="column"  fxLayoutAlign="center">
  
-<div>
+<div >
    <img  src="../../../assets/responsive2.gif" width="100%" > 
 </div>
-<br><br>
-<!-- <div>
-   <img style="margin-top: 100px;" src="../../../assets/dad.gif" > 
+</div>  <!-- responsive end -->
 
-</div> -->
+<br><br><br><br>
+
+<div >
+   <p class="text">Construimos nuestro Stack solo con lo mejor del mundo IT </p>
+   <p class="text2">Nos permite construir fuertes aplicaciones, 100% escalables. Sin limites!!
+   </p>
 </div>
+
+<br><br><br>
+
+<div fxLayout="row no-wrap"  fxLayoutAlign="space-around center" style="background:rgb(252, 242, 228);">
+
+   <div fxFlex="30" fxLayoutAlign="center center">
+      <img src="../../../assets/mongodb-atlas.png" id="mongo" > 
+   </div>
+
+   <div fxFlex="30" fxLayoutAlign="center center">
+      <img src="../../../assets/node-express.png" id="node" > 
+   </div>
+
+   <div fxFlex="30" fxLayoutAlign="center center">
+      <img src="../../../assets/angular.png" id="angular" > 
+   </div>
+
+</div>
+<br><br>
+
+
+
+
 
 
 

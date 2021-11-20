@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 export class CardsService {
   
 
-  private baseUrl: string = environment.baseUrl;
+  // private baseUrl: string = environment.baseUrl;
   
   constructor(private _http: HttpClient) { }
 
@@ -27,7 +27,7 @@ export class CardsService {
     description: "Creamos Apps para móviles y Web Apps listas para tener tu producto digital en línea. Tanto para sistema operativo iOS (Apple / iPhone) o Android (Google)."
    },
    {
-    title:"Servicios Digitales",
+    title:"Base de Datos",
     img: "./assets/digital.png",
     description: "Nuestras disciplinas incluyen un servicio completo que abarca desde el diseño y la programación de proyectos con base tecnológica, hasta las estrategias de comunicación, marketing y contenidos."
    }
