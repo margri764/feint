@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule }  from '@angular/common';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
@@ -16,6 +17,23 @@ import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
+  imports:[
+    CommonModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatInputModule,
+    MatListModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatDialogModule
+  ],
+  
   exports: [
     MatAutocompleteModule,
     MatButtonModule,

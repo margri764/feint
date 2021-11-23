@@ -15,7 +15,9 @@ import { HomeComponent } from './home/home/home.component';
 
   @NgModule({
     imports: [
-        RouterModule.forRoot( routes )
+        RouterModule.forRoot( routes ,{
+          useHash: true
+        })
     ],
     exports: [
         RouterModule
