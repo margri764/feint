@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-sidebar',
@@ -11,7 +12,9 @@ export class SidebarComponent implements OnInit {
 
 show: boolean = true;
 
-  constructor() { }
+  constructor(
+        
+  ) { }
 
   ngOnInit(): void {
   }

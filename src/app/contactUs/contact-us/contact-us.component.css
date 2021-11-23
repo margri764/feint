@@ -1,211 +1,164 @@
 
 
-@font-face {
-    font-family:'ribeye';
-    src: url(/assets/font/Ribeye-Regular.ttf);
-     
+
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+ 
+  .contact{
+    background-image: radial-gradient(circle at 100% 0%, #f08dff 0, #ba77ed 25%, #845ec2 50%, #534596 75%, #2a2f6f 100%);
+    width: 100vw;
+    height: 50vh;
   }
-  .btn{
-    background-color: coral;
-    background-image: linear-gradient(30deg, rgb(255, 30, 0),rgb(255, 74, 74));
-    color: cornsilk;
-    font-family:'ribeye';
-    box-shadow: 3px 3px 7px rgb(108, 108, 150);
+
+  .contact h1{
+    color: white;
   }
-  .btn:hover {
-    box-shadow: 6px 6px 14px rgb(108, 108, 150);
-  
+
+
+.container{
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10vw;
+}
+
+.feint{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: #FF6F91;
+  padding: 30px;
+  line-height: 1em;
+}
+
+.devs{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3vw;
+  color: white;
+  padding: 10px;
+  line-height: 1em;
+  margin-right: 2vw;
+}
+
+.text{
+  font-family: 'Poppins';
+  font-size: 3.5vw;
+  color: rgb(24, 24, 24);
+  line-height: 4vw;
+}
+
+.text2{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3vw;
+  color: rgb(24, 24, 24);
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 4vw;
+}
+
+.form{
+  /* width: 100px; */
+ /* margin-right: 20px; */
+
+}
+
+.fa-whatsapp{
+  font-size: 6vw;
+  color: black;
+  /* color: rgb(60, 167, 45); */
+  transition: all 0.3s ease 0s;
+}
+
+.fa-whatsapp:hover{   
+  color: rgb(199, 199, 199);
+  transform: translateY(-7px);
+}
+
+.fa-whatsapp:active{
+  transform: translateY(-1px);
+}
+
+.fa-instagram{
+  font-size: 6vw;
+  color: black;
+  /* color: rgb(175, 110, 6); */
+  transition: all 0.3s ease 0s;
   }
-  a{
-    text-decoration: none;
-    color: aliceblue;
-  }
-  a :hover{
-  
-    color: rgba(253, 10, 10, 0.514);
-    opacity: 0.8;
-  }
-  
-  .container{
-    display: flex;
-    flex-direction: column;
+
+.fa-instagram:hover{
+  color: rgb(199, 199, 199);
+}
+
+.fa-facebook-f{
+  font-size: 6vw;
+  color: black;
+  /* color:royalblue; */
+  transition: all 0.3s ease 0s;
+}
+
+.fa-facebook-f:hover{
+  color: rgb(199, 199, 199);
+}
+
+.fa-envelope{
+  font-size: 6vw;
+  color: black;
+  /* color: rgb(175, 110, 6); */
+  transition: all 0.3s ease 0s;
+}
+
+.fa-envelope:hover{
+  color: rgb(199, 199, 199);
+}
+
+
+
+
+mat-label{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2vw;
+  color: rgb(24, 24, 24);
+}
+
+mat-form-field{
+  width: 70%;
+}
+ 
+
+
+.btn {
+  padding: 1.3em 3em;
+  font-size: 1vw;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 100;
+  color: rgb(56, 56, 56);
+  background-color: rgb(228, 227, 227);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
  }
-  .spinner {
-    border: 8px solid rgba(0, 0, 0, 0.1);
-    width: 20vh;
-    height: 20vh;
-    border-radius: 50%;
-    border-left-color: rgb(255, 0, 0);
-    /* margin-top: 1vw; */
-  
-    animation: spin 0.9s ease infinite;
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  .form_wrap{
-    width: 90vw;
-    height: 75vh;  
-    margin-left: auto;
-    margin-right: auto;    
-    margin-bottom: 10vw; 
-    margin-top: 5vw;
-    display: flex;
-    background: #fff;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0px 0px 30px rgba(5, 5, 5, 0.2);
  
-
-
-}
-  
-  /* ======================Informacion de Contacto==============*/
-  
-  .cantact_info::before{
-      content: '';
-      width: 100%;
-      height: 100%;
-  
-      position: absolute;
-      top: 0;
-      left: 0;
-  
-      background:rgb(252, 196, 128);
-      opacity: 0.7;
-  }
-  
-  .cantact_info{
-      width: 55vw;
-      position: relative;  
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;  
-      /* background-image: url('../../../../assets/fondonegocio.jpg'); */
-      background-size: cover;
-      background-position: center center;
-  
-  }
-  .info_title h2{
-    font-family: 'ribeye';
-    font-size: 2.6vw;
-  
-}
-
-  
-  .info_title,
-  .info_items{
-      position: relative;   
-      color: rgb(255, 255, 255);
-      font-family: 'ribeye';
-      font-size: 2.6vw;
-  }
-  
-  .info_title{
-      margin-bottom: 60px;
-  }
-  
-  .info_title span{
-      font-size: 5vh;
-      display: flex;
-      text-align: center;
-      margin-bottom: 15px;
-  }
-  
-  .info_title h2{
-      font-size: 6vw;
-      text-align: center;
-  }
-
-  .info_items p{
-      font-size: 2.5vw;
-  }
-  
-  .info_items .fa-envelope{
-  
-    text-align: center;
-    font-size: 4vw;
-    margin-right: 1vw;
-  
-
-
-  }
-  .info_title .fa-user-circle{
-    font-size: 4vw;
-    display: flex;
-    text-align: center;
-    margin-bottom: 1vw;
-    margin-left: 9vw;
-}
-  
+ .btn:hover {
+  background-color: #FF6F91;
+  box-shadow: 0px 15px 20px rgba(145, 145, 145, 0.4);
+  transform: translateY(-7px);
+ }
+ 
+ .btn:active {
+  color: white;
+  transform: translateY(-1px);
+ }
 
 
   
-  
-   /* FORMULARIO =================================== */
-
-
-  form.form_contact{
-      width: 57vw;
-      padding: 3vw;
-      font-family: 'ribeye';
-  }
-  
-  form.form_contact h2 {
-      font-size: 25px;
-      font-weight: 300;
-      color: #303030;
-      margin-bottom: 30px;
-      font-family: 'ribeye';
-  }
-  
-   
-  form.form_contact label {
-      font-weight: 450;
-  }
-  
-  form.form_contact input,
-  form.form_contact textarea {
-      width: 100%;
-      padding: 8px 0px 5px;
-      margin-bottom: 20px;
-      /* line-height: 50px; */
-  
-      border: none;
-      border-bottom: 2px solid #D1D1D1;
-  
-      font-family: 'Open sans';
-      color: #5A5A5A;
-      font-size: 14px;
-      font-weight: 400;
-  }
   
  
-  .enviar{
-    background-image: linear-gradient(30deg,rgb(9, 145, 9) ,rgb(44, 138, 44));
-    font-family:'Raleway' ;
-    font-size: 3vw;
-    line-height: 3vw;
-    box-shadow: 3px 3px 7px rgb(2, 63, 12);
-    }
-
-    .volver{
-      background-image: linear-gradient(30deg, rgb(17, 0, 255),rgb(114, 104, 255));
-      font-family: 'Raleway';
-      font-size: 3vw;
-      line-height: 3vw;
-      box-shadow: 3px 3px 7px rgb(108, 108, 150);
-      margin-left: 2vw;
-    }
+ 
 
 
 
@@ -214,86 +167,50 @@
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (max-width: 542px) {
     
-        .form_wrap{
-            width: 95vw;
-            height:75%;       
-            margin-left: auto;
-            margin-right: auto;    
-            margin-bottom: 10vw; 
-        
-        }
+    
+      .contact{
 
-         /* ===================================CONTACTO========================================== */
+        height: 30vh;
+      }
 
-          .cantact_info {
-            width: 40vw;
-                      
-        }
+      .feint{
+        font-size: 6vw;
+      }
 
-        .info_items{
-            display: none;
-        }
+      .devs{
+        font-size: 6vw;
+      }
 
-   
-        .info_title h2 {
-            display: none;
+      .text{
+        font-size: 7vw;
+      }
+
+      .text2{
+        font-size: 6vw;
+        line-height: 1.3em;
+      }
+
+
+      .fa-whatsapp{
+        font-size: 15vw;
+      }      
+      .fa-instagram{
+        font-size: 15vw;
+       }
           
-        }
-
-        .info_title .fa-user-circle{
-            display: none;
-        }
-
       
-          span#map{
-            font-size: 4vw;
-            margin-right: 2vw;
-            color: white;
-          
-          
-          }
-          span#whatsapp {
-           
-            font-size: 1.8vw;
-            margin-right: 2vw;
-            color:white;
-            text-decoration: none;
-          } 
-          
-          
-          span#envelope{
-            font-size: 1vw;
-            color: white;
-          
-          }  
+      .fa-facebook-f{
+        font-size: 15vw;
+      }
 
-         /* ===================================CONTACTO========================================== */
-
-         form.form_contact{
+      .fa-envelope{
+        font-size: 15vw;
+      }
       
-            font-family: 'ribeye';
-            font-size: 3.5vw;
-        }
-        form.form_contact h2 {
-            font-size:6vw;
-            margin-top: 5vw;
-            font-family: 'ribeye';
-        }
-        
-        .enviar{
-        
-          font-size: 3.7vw;
-          line-height: 3.2vw;
-      
-          }
-          
-          .volver{
-        
-            font-size: 3.7vw;
-            line-height: 3.2vw;
-            margin-left: 3vw;
-        
-          }
+      mat-label{
+        font-size: 6vw;  
+      }
+         
        
     }  
        
@@ -305,222 +222,33 @@
    
     @media only screen and (min-width: 543px) and (max-width: 768px){
     
-        .form_wrap{
-            width: 95vw;
-            height:60%;       
-            margin-left: auto;
-            margin-right: auto;    
-            margin-bottom: 30vw; 
-        
-        }
-
-         /* ===================================CONTACTO========================================== */
-
-          .cantact_info {
-            width: 55vw;
-                      
-        }
-
-        .info_items p{
-            font-size: 2.3vw;
-        }
-
-   
-        .info_title h2 {
-            font-size: 3vw;
-          
-        }
-
-        .info_title .fa-user-circle{
-            font-size: 4vw;
-            margin-left: 16vw;
-        }
 
       
-          span#map{
-            font-size: 4vw;
-            margin-right: 2vw;
-            color: white;
-          
-          
-          }
-          span#whatsapp {
-           
-            font-size: 1.8vw;
-            margin-right: 2vw;
-            color:white;
-          } 
-          
-          
-          span#envelope{
-            font-size: 1vw;
-            color: white;
-          
-          }  
-          .enviar{
-        
-            font-size: 2.7vw;
-            line-height: 3vw;
-        
-            }
-            
-            .volver{
-          
-              font-size: 2.7vw;
-              line-height: 3vw;
-          
-            }
        
     }  
        
     
     /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    @media only screen and (min-width: 769px) and (max-width: 1280px) {
        
    
 
-        .form_wrap{
-            width: 80vw;
-            height:65%;  
-            margin-left: auto;
-            margin-right: auto;    
-            margin-bottom: 20vw; 
-        
-          
-        }
-
-         /* ===================================CONTACTO========================================== */
-
-          .cantact_info {
-            width: 55vw;
-                      
-        }
-
-        .info_items p{
-            font-size: 1.7vw;
-        }
-
-   
-        .info_title h2 {
-            font-size: 2.7vw;
-          
-        }
-
-        .info_title .fa-user-circle{
-            font-size: 4vw;
-            margin-left: 16vw;
-        }
+    
 
       
-          span#map{
-            font-size: 4vw;
-            margin-right: 2vw;
-            color: white;
-          
-          
-          }
-          span#whatsapp {
-           
-            font-size: 1.8vw;
-            margin-right: 2vw;
-            color:white;
-          } 
-          
-          
-          span#envelope{
-            font-size: 1vw;
-            color: white;
-          
-          }  
-
-          .enviar{
-        
-            font-size: 1.7vw;
-            line-height: 2.5vw;
-        
-            }
-            
-            .volver{
-          
-              font-size: 1.7vw;
-              line-height: 2.5vw;
-          
-            }
-
-     
     
     }
     
     /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 1281px) {
 
-        .form_wrap{
-            width: 80vw;
-            height:60%;     
-            margin-left: auto;
-            margin-right: auto;    
-            margin-bottom: 30vw;   
-      
-         
-        }
-
-         /* ===================================CONTACTO========================================== */
-
-          .cantact_info {
-            width: 55vw;
-                      
-        }
-
-        .info_items p{
-            font-size: 1.5vw;
-        }
-
+      mat-label{
+        font-size: 1.7vw;
+  
+      }
    
-        .info_title h2 {
-            font-size: 2.5vw;
-          
-        }
 
-        .info_title .fa-user-circle{
-            font-size: 4vw;
-            margin-left: 16vw;
-        }
-
-      
-          span#map{
-            font-size: 4vw;
-            margin-right: 2vw;
-            color: white;
-          
-          
-          }
-          span#whatsapp {
-           
-            font-size: 1.4vw;
-            margin-right: 2vw;
-            color:white;
-          } 
-          
-          
-          span#envelope{
-            font-size: 0.7vw;
-            color: white;
-          
-          }  
-
-          .enviar{
         
-            font-size: 1.3vw;
-            line-height: 2.5vw;
-        
-            }
-            
-            .volver{
-          
-              font-size: 1.3vw;
-              line-height: 2.5vw;
-          
-            }
      
        
     }

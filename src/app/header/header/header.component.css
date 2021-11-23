@@ -4,17 +4,17 @@
 
 
  .header{
-    background: radial-gradient(circle at 114.09% 20.12%, #ffa3ff 0, #f790ff 16.67%, #bd79f0 33.33%, #845ec2 50%, #504393 66.67%, #252c6a 83.33%, #001847 100%);
+    background-image: radial-gradient(circle at 100% 0%, #f08dff 0, #ba77ed 25%, #845ec2 50%, #534596 75%, #2a2f6f 100%);
     width: 100vw;
     height: 100vh;
 }
 
-
+/* 
 img{
     opacity: 0.8;
     display: flex;
     width: 90%;
-}
+} */
 
 .feint{
     font-family: 'Poppins', sans-serif;
@@ -39,7 +39,7 @@ img{
 
 .icon mat-icon{
     font-size: 4vw;
-    color: #000142;
+    color:white;
 
 }
 

@@ -1,16 +1,63 @@
-  
 
-<section class="form_wrap animate__animated animate__fadeIn" >
-    
 
-            
-<form  [formGroup]="myForm" id="form"  class="form_contact"> 
 
-    <h2>Formulario de Contacto</h2>  
+<div class="container animate__animated animate__fadeIn" >
+
+  <div class="contact" fxLayout="column">
+
+   
+
+    <div class="feint animate__animated animate__backInLeft"  >
+         <span >Feint</span><span class="devs">dEvs</span> 
+    </div>
+
+    <div fxLayoutAlign="center center" fxFlex="100" >
+       <h1  class="text animate__animated animate__fadeIn">¡Dejanos tu mensaje!</h1>
+    </div> 
+
+</div>
+
+  <br> <br> <br>
+  <div fxLayout="column" fxLayoutAlign="start center">
+
+    <div >
+      <p class="text2">Elegi el medio que quieras y nos pondremos en contacto
+      </p>
+  </div>
+ </div>
+
+ <br><br>
+
+ <div fxLayoutAlign="space-evenly center">
+
+  <a  href="https://wa.me/+542302416035?text=Hola!!%20" target="blank"> 
+  <i class="fab fa-whatsapp animate__animated animate__backInLeft"></i>
+  </a>
+   
+  <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+  <span id="instagram">
+    <i class="fab fa-instagram animate__animated animate__backInUp"></i></span>
+  </a>
+
+  <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+      <span id="instagram">
+        <i class="fab fa-facebook-f animate__animated animate__backInDown"></i></span>
+  </a>
+
+  <a target="_blank" title="Instagram" href="">
+    <span id="instagram">
+    <i class="fas fa-envelope animate__animated animate__backInRight"></i></span>
+ </a>
+</div> 
+
+
+
+  <!-- <form  [formGroup]="myForm" id="form"  class="form_contact"> 
+
 
     <div class="form-floating" >
         <input style="margin-bottom:20px ;" type="text"  class="form-control" id="floatingInput"  formControlName="name" autofocus> 
-        <label  for="floatingInput">Nombre y Apellido</label>
+        <label >Nombre y Apellido</label>
  
     </div>    
 
@@ -41,16 +88,60 @@
           
         </div>
 
-</form> 
+</form>  -->
+
       
+<div fxLayout="row" style="margin-top: 10vw;" >		
 
 
+
+  <div  fxFlex="50" style="padding: 30px;"   >
+
+    <div class="form" fxLayout="column"  fxLayoutAlign="start ">
+
+      <div class="text2">Llena el formulario y pronto nos comunicaremos..
+      </div>
+
+      <div>
+
+    <form  [formGroup]="myForm" id="form">  
+
+    
+
+      <mat-form-field> 
+          <mat-label>nombre</mat-label>
+          <input matInput type="text">
+      </mat-form-field> <br>
+
+      <mat-form-field >		
+          <mat-label>email</mat-label>
+          <input matInput type="email">
+      </mat-form-field> <br>
+
+      <mat-form-field >		
+        <mat-label>mensaje</mat-label> 
+        <textarea matInput type="text" style="height: 80px;"></textarea>
+     </mat-form-field> <br>
+
+    <br><br>
  
-</section>   
-   
-
+      <button mat-button  type="button" class="btn" (click)="sendForm()" >     <mat-label>Enviar</mat-label></button>
+      <button mat-button  type="button" class="btn" routerLink="/home" >  <mat-label>Volver</mat-label></button>
   
 
+    </form>
+  </div>
+  </div>
+
+</div>
+<div  fxFlex="50" fxLayoutAlign="center center"  >
+  <img src="../../../assets/logo.png" alt="" width="50%">  
+</div>	
+
+
+</div>
+
 
 
       
+</div>

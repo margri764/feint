@@ -20,7 +20,7 @@ hidden: boolean = true;
 
 
 myForm:FormGroup = this.fb.group({
-name:    [''],
+name:    ['',[Validators.required]],
 phone:   [''],
 email:   [''],
 message :['']
@@ -29,15 +29,15 @@ message :['']
   constructor(
               public messageService: CardsService,
               private router : Router,
-              private fb : FormBuilder
+              private fb : FormBuilder,
+
 
 
   ) { }
 
   ngOnInit(): void {
   }
-          
-  
+
   
     sendForm (){
      
