@@ -1,30 +1,30 @@
- <mat-toolbar class=" toolbar animate__animated animate__fadeInDown" >
+
+ 
+ <mat-toolbar class=" toolbar animate__animated animate__fadeInDown">
+
+ 
 
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="showToolbar()">
    <mat-icon >menu</mat-icon>
  </button>
 
- <span class="example-spacer"></span>
- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-   <mat-icon><i class="fab fa-facebook-f"></i></mat-icon> 
+
+
+ <button mat-icon-button  (click)="goToUrl('whatsapp')" aria-label="Example icon-button with heart icon">
+  <mat-icon >whatsapp</mat-icon>
  </button>
 
- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-  <mat-icon><i class="fab fa-instagram"></i></mat-icon>
+ <button mat-icon-button (click)="goToUrl('gps')"class="example-icon" aria-label="Example icon-button with share icon">
+  <mat-icon>share_location</mat-icon>
 </button>
 
-<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-  <mat-icon><i class="fab fa-whatsapp"></i></mat-icon>
+<button mat-icon-button (click)="goToUrl('cel')" class="example-icon" aria-label="Example icon-button with share icon">
+  <mat-icon>phone_android</mat-icon>
 </button>
 
-<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-  <mat-icon><i class="fas fa-envelope"></i></mat-icon>
+<button mat-icon-button (click)="goToUrl('email')" class="example-icon" aria-label="Example icon-button with share icon">
+  <mat-icon>email</mat-icon>
 </button>
 
 </mat-toolbar>
 
- 
-
-
-
- 

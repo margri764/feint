@@ -1,12 +1,20 @@
 
-mat-toolbar{
-    /* background-color: #845EC2; */
 
+mat-toolbar{
+    height: 20vw;
 }
 
 mat-icon{
-    color: #845EC2;
+    font-size: 3vw;
     transition: all 0.3s ease 0s;
+}
+
+mat-icon:hover{
+    color: rgb(199, 199, 199); 
+}
+
+button{
+    margin-left: 3vw;
 }
 
 mat-toolbar{   
@@ -14,22 +22,51 @@ mat-toolbar{
      overflow: hidden;
 }
 
-mat-sidenav{
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-} 
+@media only screen and (max-width: 573px){  
 
-mat-nav-list{
-    width: 100vw;
-    height: 500px;
-    overflow: hidden;
+
+ mat-icon{
+     font-size: 8vw;
+ }
+
+ 
 
 }
 
-mat-sidenav-container{
-    /* width: 400px; */
-    /* height: 400px; */
-    overflow: hidden;
-}  
+@media only screen and (min-width: 574px)and (max-width: 767px){
+    
+    mat-toolbar{
+        height: 9vw;
+    }
+
+    mat-icon{
+        font-size: 4vw;
+    }
+   
+
+}
+
+@media only screen and (min-width: 768px)and (max-width: 1280px) {
+    
+      
+    mat-toolbar{
+        height: 10vw;
+    }
+
+    mat-icon{
+        font-size: 3.5vw;
+    }
+   
+
+}
+@media only screen and (min-width: 1281px)  {
+    
+ mat-toolbar{
+     height: 8vw;
+ }
+ 
+
+
+}
+
 

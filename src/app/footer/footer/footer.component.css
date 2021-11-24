@@ -45,11 +45,17 @@
         line-height: 1.5em;
     }
 
-    mat-card-content p{
+    mat-card-content p,a{
             font-family: "poppins";
             font-size: 2vw;
             color: white;
             line-height: 2em;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+    }
+
+    mat-card-content p,a:hover{
+        color: rgb(199, 199, 199);
     }
 
     .copyrigth #feint{
