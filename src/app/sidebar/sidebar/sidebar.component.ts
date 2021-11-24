@@ -32,7 +32,7 @@ export class SidebarComponent implements OnInit {
 
     switch( value ) {
       case 'whatsapp' :
-                  (window as any).open('https://wa.me/+54230269019?text=Hola!!%20', "_blank");
+                  (window as any).open('https://wa.me/+542302690139?text=Hola!!%20', "_blank");
        break;
       
       case 'gps': 
@@ -44,7 +44,7 @@ export class SidebarComponent implements OnInit {
               Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'Nos ponemos en contacto: +54 9 2302690139',
+                title: 'Nos ponemos en contacto: +54 2302690139',
                 showConfirmButton: false,
                 });
      break;
